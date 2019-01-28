@@ -12,7 +12,7 @@ import { BibliotecaPage} from "../pages/biblioteca/biblioteca";
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = CurriculumPage;
+  rootPage:any = BibliotecaPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
