@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { BibliotecaPage} from "../biblioteca/biblioteca";
 
 @Component({
   selector: 'page-home',
@@ -10,5 +11,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  navegar(){
+    this.navCtrl.push(BibliotecaPage)
+  }
 }
