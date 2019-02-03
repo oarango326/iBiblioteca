@@ -17,7 +17,9 @@ export class BibliotecaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter BibliotecaPage');
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad BibliotecaPage');
   }

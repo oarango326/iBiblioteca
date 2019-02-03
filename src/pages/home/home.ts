@@ -14,4 +14,10 @@ export class HomePage {
   navegar(){
     this.navCtrl.push(BibliotecaPage)
   }
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter HomePage');
+  }
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomePage');
+  }
 }

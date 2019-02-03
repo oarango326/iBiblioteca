@@ -17,7 +17,9 @@ export class AutorPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter AutorPage');
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad AutorPage');
   }

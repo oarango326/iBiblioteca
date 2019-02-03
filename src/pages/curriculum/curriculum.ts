@@ -21,5 +21,8 @@ export class CurriculumPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CurriculumPage');
   }
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter CurriculumPage');
+  }
 
 }
