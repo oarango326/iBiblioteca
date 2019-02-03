@@ -7,12 +7,13 @@ import { HomePage } from '../pages/home/home';
 import {AutorPage} from '../pages/autor/autor';
 import { CurriculumPage} from "../pages/curriculum/curriculum";
 import { BibliotecaPage} from "../pages/biblioteca/biblioteca";
+import {DetallePage} from "../pages/detalle/detalle";
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = DetallePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

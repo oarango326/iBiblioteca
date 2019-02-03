@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {AutorPage} from "../pages/autor/autor";
 import {CurriculumPage} from "../pages/curriculum/curriculum";
 import {BibliotecaPage} from "../pages/biblioteca/biblioteca";
+import {DetallePage} from "../pages/detalle/detalle";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {BibliotecaPage} from "../pages/biblioteca/biblioteca";
     HomePage,
     AutorPage,
     CurriculumPage,
-    BibliotecaPage
+    BibliotecaPage,
+    DetallePage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {BibliotecaPage} from "../pages/biblioteca/biblioteca";
     HomePage,
   AutorPage,
   CurriculumPage,
-  BibliotecaPage
+  BibliotecaPage,
+    DetallePage
   ],
   providers: [
     StatusBar,
