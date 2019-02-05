@@ -15,21 +15,19 @@ import {DetallePage} from "../detalle/detalle";
   templateUrl: 'biblioteca.html',
 })
 export class BibliotecaPage {
-  libro: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.libro = navParams.get('libro');
-
   }
   ionViewDidEnter() {
     console.log('ionViewDidEnter BibliotecaPage');
   }
   ionViewDidLoad() {
-    console.log(this.libro)
     console.log('ionViewDidLoad BibliotecaPage');
   }
 
   verPaginaDetalle(libro):void {
+
     this.navCtrl.push(DetallePage, {libro: libro});
+
   }
 
 }

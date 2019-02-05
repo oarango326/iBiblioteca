@@ -12,10 +12,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-detalle',
   templateUrl: 'detalle.html',
-})
-export class DetallePage {
 
+})
+
+export class DetallePage {
+  public libro:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.libro = navParams.get('libro');
+    (console.log(this.libro));
   }
 
   ionViewDidLoad() {
