@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {DetallePage} from "../detalle/detalle";
 
 /**
  * Generated class for the BibliotecaPage page.
@@ -14,18 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'biblioteca.html',
 })
 export class BibliotecaPage {
-
+  libro: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.libro = navParams.get('libro');
+
   }
   ionViewDidEnter() {
     console.log('ionViewDidEnter BibliotecaPage');
   }
   ionViewDidLoad() {
+    console.log(this.libro)
     console.log('ionViewDidLoad BibliotecaPage');
   }
 
-  detalle(){
-
+  verPaginaDetalle(libro):void {
+    this.navCtrl.push(DetallePage, {libro: libro});
   }
 
 }
